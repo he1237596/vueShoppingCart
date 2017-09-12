@@ -19,3 +19,6 @@
 - 收费选项同上,互斥
 - 删除按钮同购物车页面(省略)
 - 编辑按钮点击跳转到新页面,一个form表单页(省略)
+
+![image](https://raw.githubusercontent.com/he1237596/vueShoppingCart/master/1.gif)
+![image](https://raw.githubusercontent.com/he1237596/vueShoppingCart/master/2.gif)
