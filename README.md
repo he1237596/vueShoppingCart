@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/he1237596/vueShoppingCart/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/he1237596/vueShoppingCart/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+vue购物车练习
+项目主主体分两页,使用vue2.0和axios,数据为本地模拟的就送数据
+-.cart(购物车页)
+1.一打开网页,使用mounted钩子函数直接发送网络请求,获取购物车列表数据
+2.使用v-for循环,遍历渲染数据
+3.点击+/-按钮,实现商品数量加/减,运用v-model特性,实现单类商品总价格随之更改
+4.点击勾选按钮,实现所有总商品价格的计算,使用$set给接受的数据对象里添加一个checked属性,来检测是否勾选了
+5.定义一个data里的属性来记录点击的循环的那类商品,然后找到它的索引,来操作列表数据,以实现删除功能(一般通过发送请求给后台,后台返回状态码,确认是否删除了)
+6定义过滤器,对价格数据进行格式化
+二.address.html(收货地址页)
+1.一点击结算,打开收货地址网页,使用mounted钩子函数直接发送网络请求,获取地址列表数据
+2.使用v-for循环,遍历渲染数据,定义过滤器,对数组进行过滤,只显示前三组数据,点击more,改变过滤的长度,显示全列表
+3.给列表动态绑定样式类名,用点击的地址ID和当前地址ID进行比较,当点击时将当前地址index赋值为此列表项的地址ID,实现当前的项选中,其他项未选中功能
+4.收费选项同上,互斥
+5.删除按钮同购物车页面(省略)
+6.编辑按钮点击跳转到新页面,一个form表单页(省略)
